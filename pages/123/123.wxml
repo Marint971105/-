@@ -1,0 +1,33 @@
+<!--pages/123/123.wxml-->
+<view class="container">
+ <image src="/images/touxiang.jpeg" class="header"/>
+<view class="loginpane">
+<form bindsubmit="_handlersubmit">
+<view class="formItem">
+<text class="iconfont icon-account"></text>
+<input name="accountv" class="account" placeholder="请输入账号" bindinput="_handleraccountinput"></input>
+<icon type="{{isgood?'success':'warn'}}"></icon>
+</view>
+<view class="formItem">
+<text class="iconfont icon-password"></text>
+<input name="passwordv" class="password" password="true" placeholder="请输入密码" bindinput="_handlerpwdinput"></input>
+</view>
+
+<view class="spaceBetween formItem">
+<checkbox-group name="rememberpwdv" bindchange="_handlerrememberpwd">
+<checkbox  color="tomato" value="1" checked="{{rememberpwd}}">记住密码</checkbox>
+</checkbox-group>
+
+<checkbox-group name="autologinv" bindchange="_handlerAutoLogin">
+<checkbox  color="tomato" value="1" checked="{{autoLogin}}">自动登录</checkbox>
+</checkbox-group>
+</view>
+<view class="formItem">
+<button type="primary" class="loginBtn" form-type="submit" disabled="{{!canLogin}}">登 录</button>
+</view>
+<view class="formItem">
+<button  class="registerBtn">注 册</button>
+</view>
+ </form>
+</view>
+</view>

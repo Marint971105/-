@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view class="container">
+<image src="/images/touxiang.jpeg" class="header"/>
+<view class="loginpane">
+<view>1</view>
+<view>2</view>
+<view>3</view>
+<view>4</view>
+<view>5</view>
+</view>
+</view>
